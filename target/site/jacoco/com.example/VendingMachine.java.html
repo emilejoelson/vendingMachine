@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>VendingMachine.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">vending-machine</a> &gt; <a href="index.source.html" class="el_package">com.example</a> &gt; <span class="el_source">VendingMachine.java</span></div><h1>VendingMachine.java</h1><pre class="source lang-java linenums">package com.example;
+
+import java.util.EnumMap;
+import java.util.HashMap;
+import java.util.Map;
+
+public class VendingMachine implements VendingMachineInterface {
+    private int balance;
+    private final Map&lt;Integer, CoinEnum&gt; validCoins;
+    private final Map&lt;String, Integer&gt; productPrices;
+
+<span class="fc" id="L12">    public VendingMachine() {</span>
+<span class="fc" id="L13">        balance = 0;</span>
+<span class="fc" id="L14">        validCoins = initializeValidCoins();</span>
+<span class="fc" id="L15">        productPrices = initializeProductPrices();</span>
+<span class="fc" id="L16">    }</span>
+
+    private Map&lt;Integer, CoinEnum&gt; initializeValidCoins() {
+<span class="fc" id="L19">        Map&lt;Integer, CoinEnum&gt; coins = new HashMap&lt;&gt;();</span>
+<span class="fc bfc" id="L20" title="All 2 branches covered.">        for (CoinEnum coinEnum : CoinEnum.values()) {</span>
+<span class="fc" id="L21">            coins.put(coinEnum.getValue(), coinEnum);</span>
+        }
+<span class="fc" id="L23">        return coins;</span>
+    }
+
+
+    private Map&lt;String, Integer&gt; initializeProductPrices() {
+<span class="fc" id="L28">        Map&lt;String, Integer&gt; prices = new HashMap&lt;&gt;();</span>
+<span class="fc bfc" id="L29" title="All 2 branches covered.">        for (ProductEnum product : ProductEnum.values()) {</span>
+<span class="fc" id="L30">            prices.put(product.getName(), product.getPrice());</span>
+        }
+<span class="fc" id="L32">        return prices;</span>
+    }
+
+    @Override
+    public void insertCoin(int coin) {
+<span class="fc" id="L37">        CoinEnum validCoin = validCoins.get(coin);</span>
+<span class="fc bfc" id="L38" title="All 2 branches covered.">        if (validCoin != null) {</span>
+<span class="fc" id="L39">            balance += coin;</span>
+<span class="fc" id="L40">            System.out.print(&quot;Your &quot; + validCoin.getValue() + &quot; coin is valid. Current balance: &quot; + balance + &quot; dirhams.&quot;);</span>
+        } else {
+<span class="fc" id="L42">            System.out.print(&quot;Invalid coin. You must enter 1, 2, 5, or 10 dirham coins only.&quot;);</span>
+        }
+<span class="fc" id="L44">    }</span>
+
+    @Override
+    public String selectProduct(String productName) {
+<span class="fc" id="L48">        Integer price = productPrices.get(productName);</span>
+<span class="fc bfc" id="L49" title="All 2 branches covered.">        if (price != null) {</span>
+<span class="fc bfc" id="L50" title="All 2 branches covered.">            if (balance &gt;= price) {</span>
+<span class="fc" id="L51">                int change = balance - price;</span>
+<span class="fc" id="L52">                balance -= price;</span>
+<span class="fc" id="L53">                String result = &quot;You purchased &quot; + productName + &quot; for &quot; + price + &quot; dirhams.&quot;;</span>
+<span class="fc bfc" id="L54" title="All 2 branches covered.">                if (change &gt; 0) {</span>
+<span class="fc" id="L55">                    result += &quot;Change: &quot; + change + &quot; dirhams&quot;;</span>
+                }
+<span class="fc" id="L57">                return result;</span>
+            } else {
+<span class="fc" id="L59">                return &quot;Insufficient balance. Please insert more coins or select a cheaper product.&quot;;</span>
+            }
+        } else {
+<span class="fc" id="L62">            return &quot;Product not found. Please select from available products.&quot;;</span>
+        }
+    }
+
+    @Override
+    public void cancelRequest() {
+<span class="fc bfc" id="L68" title="All 2 branches covered.">        if (balance &gt; 0) {</span>
+<span class="fc" id="L69">            System.out.print(&quot;Request canceled. Your Solde is &quot; + balance + &quot; dirhams.&quot;);</span>
+<span class="fc" id="L70">            refund();</span>
+        } else {
+<span class="fc" id="L72">            System.out.print(&quot;No request to cancel.&quot;);</span>
+        }
+<span class="fc" id="L74">    }</span>
+
+    @Override
+    public void reset() {
+<span class="fc" id="L78">        balance = 0;</span>
+<span class="fc" id="L79">        System.out.print(&quot;Vending machine reset successful.&quot;);</span>
+<span class="fc" id="L80">    }</span>
+
+    public void refund() {
+<span class="fc" id="L83">        System.out.print(&quot;Refunding &quot; + balance + &quot; dirhams.&quot;);</span>
+<span class="fc" id="L84">        balance = 0;</span>
+<span class="fc" id="L85">    }</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.11.202310140853</span></div></body></html>

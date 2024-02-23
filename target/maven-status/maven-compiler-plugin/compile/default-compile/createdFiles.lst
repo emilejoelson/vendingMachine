@@ -1,0 +1,5 @@
+com\example\VendingMachineInterface.class
+com\example\ProductEnum.class
+com\example\App.class
+com\example\CoinEnum.class
+com\example\VendingMachine.class
