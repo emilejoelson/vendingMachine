@@ -1,5 +1,4 @@
 GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
 vending-machine,com.example,ProductEnum,0,52,0,0,0,11,0,4,0,4
-vending-machine,com.example,App,28,0,0,0,10,0,2,0,2,0
 vending-machine,com.example,VendingMachine,0,173,0,14,0,41,0,15,0,8
 vending-machine,com.example,CoinEnum,0,42,0,0,0,9,0,3,0,3

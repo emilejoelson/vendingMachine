@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.example.AppTest" time="1.038" tests="10" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.example.AppTest" time="0.609" tests="10" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="sun.cpu.isalist" value="amd64"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.class.path" value="C:\Users\User1\OneDrive\Bureau\PFE\Project\vending-machine\target\test-classes;C:\Users\User1\OneDrive\Bureau\PFE\Project\vending-machine\target\classes;C:\Users\User1\.m2\repository\org\junit\jupiter\junit-jupiter\5.10.2\junit-jupiter-5.10.2.jar;C:\Users\User1\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.2\junit-jupiter-api-5.10.2.jar;C:\Users\User1\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\User1\.m2\repository\org\junit\platform\junit-platform-commons\1.10.2\junit-platform-commons-1.10.2.jar;C:\Users\User1\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\User1\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.10.2\junit-jupiter-params-5.10.2.jar;C:\Users\User1\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.2\junit-jupiter-engine-5.10.2.jar;C:\Users\User1\.m2\repository\org\junit\platform\junit-platform-engine\1.10.2\junit-platform-engine-1.10.2.jar;"/>
+    <property name="java.class.path" value="C:\Users\User1\OneDrive\Bureau\PFE\Project\vendingMachine\target\test-classes;C:\Users\User1\OneDrive\Bureau\PFE\Project\vendingMachine\target\classes;C:\Users\User1\.m2\repository\org\junit\jupiter\junit-jupiter\5.10.2\junit-jupiter-5.10.2.jar;C:\Users\User1\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.2\junit-jupiter-api-5.10.2.jar;C:\Users\User1\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\User1\.m2\repository\org\junit\platform\junit-platform-commons\1.10.2\junit-platform-commons-1.10.2.jar;C:\Users\User1\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\User1\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.10.2\junit-jupiter-params-5.10.2.jar;C:\Users\User1\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.2\junit-jupiter-engine-5.10.2.jar;C:\Users\User1\.m2\repository\org\junit\platform\junit-platform-engine\1.10.2\junit-platform-engine-1.10.2.jar;"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="user.variant" value=""/>
@@ -15,9 +15,9 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-17\bin"/>
-    <property name="sun.java.command" value="C:\Users\User1\AppData\Local\Temp\surefire13337691026672245707\surefirebooter-20240223114005388_3.jar C:\Users\User1\AppData\Local\Temp\surefire13337691026672245707 2024-02-23T11-40-04_447-jvmRun1 surefire-20240223114005388_1tmp surefire_0-20240223114005388_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\User1\AppData\Local\Temp\surefire6579221381180230573\surefirebooter-20240223115650065_3.jar C:\Users\User1\AppData\Local\Temp\surefire6579221381180230573 2024-02-23T11-56-49_422-jvmRun1 surefire-20240223115650065_1tmp surefire_0-20240223115650065_2tmp"/>
     <property name="jdk.debug" value="release"/>
-    <property name="surefire.test.class.path" value="C:\Users\User1\OneDrive\Bureau\PFE\Project\vending-machine\target\test-classes;C:\Users\User1\OneDrive\Bureau\PFE\Project\vending-machine\target\classes;C:\Users\User1\.m2\repository\org\junit\jupiter\junit-jupiter\5.10.2\junit-jupiter-5.10.2.jar;C:\Users\User1\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.2\junit-jupiter-api-5.10.2.jar;C:\Users\User1\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\User1\.m2\repository\org\junit\platform\junit-platform-commons\1.10.2\junit-platform-commons-1.10.2.jar;C:\Users\User1\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\User1\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.10.2\junit-jupiter-params-5.10.2.jar;C:\Users\User1\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.2\junit-jupiter-engine-5.10.2.jar;C:\Users\User1\.m2\repository\org\junit\platform\junit-platform-engine\1.10.2\junit-platform-engine-1.10.2.jar;"/>
+    <property name="surefire.test.class.path" value="C:\Users\User1\OneDrive\Bureau\PFE\Project\vendingMachine\target\test-classes;C:\Users\User1\OneDrive\Bureau\PFE\Project\vendingMachine\target\classes;C:\Users\User1\.m2\repository\org\junit\jupiter\junit-jupiter\5.10.2\junit-jupiter-5.10.2.jar;C:\Users\User1\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.2\junit-jupiter-api-5.10.2.jar;C:\Users\User1\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\User1\.m2\repository\org\junit\platform\junit-platform-commons\1.10.2\junit-platform-commons-1.10.2.jar;C:\Users\User1\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\User1\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.10.2\junit-jupiter-params-5.10.2.jar;C:\Users\User1\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.2\junit-jupiter-engine-5.10.2.jar;C:\Users\User1\.m2\repository\org\junit\platform\junit-platform-engine\1.10.2\junit-platform-engine-1.10.2.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="C:\Users\User1"/>
     <property name="user.language" value="en"/>
@@ -25,12 +25,12 @@
     <property name="java.version.date" value="2023-10-17"/>
     <property name="java.home" value="C:\Program Files\Java\jdk-17"/>
     <property name="file.separator" value="\"/>
-    <property name="basedir" value="C:\Users\User1\OneDrive\Bureau\PFE\Project\vending-machine"/>
+    <property name="basedir" value="C:\Users\User1\OneDrive\Bureau\PFE\Project\vendingMachine"/>
     <property name="java.vm.compressedOopsMode" value="32-bit"/>
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\User1\AppData\Local\Temp\surefire13337691026672245707\surefirebooter-20240223114005388_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\User1\AppData\Local\Temp\surefire6579221381180230573\surefirebooter-20240223115650065_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="17.0.9+11-LTS-201"/>
@@ -44,7 +44,7 @@
     <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
     <property name="java.io.tmpdir" value="C:\Users\User1\AppData\Local\Temp\"/>
     <property name="java.version" value="17.0.9"/>
-    <property name="user.dir" value="C:\Users\User1\OneDrive\Bureau\PFE\Project\vending-machine"/>
+    <property name="user.dir" value="C:\Users\User1\OneDrive\Bureau\PFE\Project\vendingMachine"/>
     <property name="os.arch" value="amd64"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="sun.os.patch.level" value=""/>
@@ -56,14 +56,14 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase name="TestInsertCoin2And5" classname="com.example.AppTest" time="0.496"/>
-  <testcase name="TestInsertCoinValid" classname="com.example.AppTest" time="0.063"/>
-  <testcase name="TestSelectProductNoNull" classname="com.example.AppTest" time="0.015"/>
-  <testcase name="TestInsufficentSolde" classname="com.example.AppTest" time="0.005"/>
-  <testcase name="TestRefund" classname="com.example.AppTest" time="0.015"/>
-  <testcase name="TestSelectProductNull" classname="com.example.AppTest" time="0.006"/>
-  <testcase name="TestCancelRequestWithIntBalance" classname="com.example.AppTest" time="0.011"/>
-  <testcase name="TestReset" classname="com.example.AppTest" time="0.009"/>
-  <testcase name="TestInsertCoinInvalid" classname="com.example.AppTest" time="0.003"/>
-  <testcase name="TestCancelRequestWithoutBalance" classname="com.example.AppTest" time="0.011"/>
+  <testcase name="TestInsertCoin2And5" classname="com.example.AppTest" time="0.214"/>
+  <testcase name="TestInsertCoinValid" classname="com.example.AppTest" time="0.048"/>
+  <testcase name="TestSelectProductNoNull" classname="com.example.AppTest" time="0.033"/>
+  <testcase name="TestInsufficentSolde" classname="com.example.AppTest" time="0.003"/>
+  <testcase name="TestRefund" classname="com.example.AppTest" time="0.012"/>
+  <testcase name="TestSelectProductNull" classname="com.example.AppTest" time="0.005"/>
+  <testcase name="TestCancelRequestWithIntBalance" classname="com.example.AppTest" time="0.006"/>
+  <testcase name="TestReset" classname="com.example.AppTest" time="0.005"/>
+  <testcase name="TestInsertCoinInvalid" classname="com.example.AppTest" time="0.011"/>
+  <testcase name="TestCancelRequestWithoutBalance" classname="com.example.AppTest" time="0.003"/>
 </testsuite>
